@@ -11,37 +11,26 @@
     </header>
     <main>
       <form>
-        <h3 id="criar">Criar conta</h3>
-        <label for="nome">Nome completo</label>
-        <input type="text" id="nome" placeholder="digite seu nome" required />
+        <img src="../img/teste.png">
+        <label for="login" class="log">Login</label>
+        <input type="text" id="login" placeholder="digite seu login" required />
 
-        <label for="email">E-mail</label>
+        <label for="senha" class="log">Senha</label>
         <input
-          type="email"
-          id="email"
-          placeholder="digite seu e-mail"
+          type="password"
+          id="senha"
+          placeholder="digite sua senha"
           required
         />
 
-        <label for="cep">CEP</label>
-        <input type="number" id="cep" placeholder="digite seu CEP" required />
+        <input type="submit" value="Entrar" id="btn"></input>
 
-        <label for="endereco">Endereço</label>
-        <input
-          type="text"
-          id="endereco"
-          placeholder="digite seu endereço"
-          required
-        />
+        <label class="checkbox" class="lembrar"
+        ><input type="checkbox" class="lembrar" /> Lembrar login</label
+      >
 
-        <label class="checkbox" class="termos"
-          ><input type="checkbox" class="termos" /> Eu li e aceito os
-          <a href="#">termos de compromisso</a> para criar minha conta.</label
-        >
-
-        <input type="submit" value="Criar conta agora" id="btn"></input>
-
-        <p>eu já tenho uma conta, <a href="#">entrar</a></p>
+        <p class="log"><a href="#">Esqueci minha senha </a></p>
+        <p class="log"><a href="#">Não tenho conta, criar agora.</a></p>
       </form>
     </main>
     <footer>
