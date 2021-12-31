@@ -35,21 +35,19 @@ main {
 }
 
 form {
-  width: 20%;
-  height: 70%;
   background-color: rgba(0, 0, 0, 0.726);
-  padding-left: 6%;
-  padding-right: 6%;
   color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 30%;
+  padding: 3%;
   border-radius: 1%;
 }
 
+#img-prc {
+  display: flex;
+  justify-content: center;
+}
+
 form img {
-  text-align: center;
   width: 140px;
   height: 140px;
 }
@@ -57,26 +55,13 @@ form img {
 form label,
 input {
   align-items: left;
-  padding: 5%;
   border-radius: 4px;
-}
-
-#btn {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 8px 16px;
-  width: 50%;
-  height: 34px;
-  background-color: #ffd000;
-  border-radius: 6px;
 }
 
 .log {
   display: flex;
-  text-align: left;
-  justify-content: left;
+  text-align: center;
+  justify-content: center;
 }
 
 footer {
