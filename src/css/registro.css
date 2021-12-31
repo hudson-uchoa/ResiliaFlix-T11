@@ -36,37 +36,21 @@ main {
 
 form {
   width: 45%;
+  height: 90%;
   background-color: rgba(0, 0, 0, 0.726);
-  padding-left: 6%;
-  padding-right: 6%;
-  color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: left;
+  padding: 2%;
+  color: white;
   border-radius: 1%;
 }
 
-#criar {
-  color: #ffd000;
-}
-
-form label,
-input {
-  padding: 2%;
+form input {
   border-radius: 4px;
 }
 
-#btn {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 8px 16px;
-  width: 100%;
-  height: 34px;
-  background-color: #ffd000;
-  border-radius: 6px;
+form label {
+  padding: 2px;
 }
 
 footer {
@@ -75,7 +59,7 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 30%;
+  height: 10%;
   color: white;
   text-align: center;
   background-color: black;
