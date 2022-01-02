@@ -12,17 +12,37 @@ html {
 
 body {
   background-image: url(../img/netflix-juillet-1\ 1.png);
-  background-repeat: no-repeat;
   background-size: cover;
   font-family: "Archivo", sans-serif;
+  position: relative;
 }
 
-header {
-  display: flex;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.808);
-  padding: 2%;
-  height: auto;
+#header {
+  background-color: #1c1c1c;
+}
+.cor-fonte {
+  color: white !important;
+}
+
+.cor-fonte:hover {
+  color: #ffd000 !important;
+}
+
+.navbar-toggler {
+  color: white;
+}
+
+/*Altera a cor do sanduiche menu de navegação mobile*/
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.bg-primary-color {
+  background-color: #fff;
+}
+
+.bg-secondary-color {
+  background-color: #ece8ea;
 }
 
 main {
@@ -37,7 +57,7 @@ main {
 form {
   width: 45%;
   height: 90%;
-  background-color: rgba(0, 0, 0, 0.726);
+  background-color: #1c1c1cb6;
   display: flex;
   flex-direction: column;
   padding: 2%;
@@ -59,8 +79,8 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 10%;
+  height: 20%;
   color: white;
   text-align: center;
-  background-color: black;
+  background-color: #1c1c1c;
 }
