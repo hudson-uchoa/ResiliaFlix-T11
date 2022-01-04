@@ -70,15 +70,21 @@
 
     <main>
       <form>
+        <div id="concluido">
+          <h3>Parabéns, seu cadastro foi concluido e agora você vai poder <br>
+            usufruir de todo tipo de sério ou filme já lançado no nosso catálogo da <strong>Resiliaflix</strong><br>
+          efetue o login e curta todos os nossos <a href="./login.html"><strong>benefícios! Clique aqui para entrar.</strong></a></h3>
+      </div>
         <h3 id="criar">Criar conta</h3>
         <div class="form-row">
           <div class="form-group col-md-7">
-            <label for="inputEmail4">Nome</label>
+            <label for="inputEmail1">Nome</label>
             <input
               type="text"
               class="form-control"
-              id="inputEmail4"
+              id="inputName"
               placeholder="Digite seu nome"
+              required
             />
           </div>
         <div class="form-row">
@@ -89,15 +95,17 @@
               class="form-control"
               id="inputEmail4"
               placeholder="Digite seu e-mail"
+              required
             />
           </div>
           <div class="form-group col-md-7">
-            <label for="inputPassword4">Senha</label>
+            <label for="inputPassword3">Senha</label>
             <input
               type="password"
               class="form-control"
               id="inputPassword4"
               placeholder="Digite sua senha"
+              required
             />
           </div>
           <div class="form-group col-md-7">
@@ -107,13 +115,14 @@
               class="form-control"
               id="inputPassword4"
               placeholder="Digite sua senha novamente"
+              required
             />
           </div>
         </div>
         <div class="form-row">
           <div class="form-group col-md-2">
             <label for="inputCEP">CEP</label>
-            <input type="text" class="form-control" id="inputCEP" placeholder="12345012"/>
+            <input type="text" class="form-control" id="inputCEP" maxlength="9" placeholder="12345012" required/>
           </div>
           <div class="form-group col-md-7">
             <label for="inputAddress">Endereço</label>
@@ -122,6 +131,16 @@
               class="form-control"
               id="inputAddress" readonly
             />
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-5">
+              <label for="inputCity">Cidade</label>
+              <input type="text" class="form-control" id="inputCity" readonly/>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputEstado">Estado</label>
+              <input type="text" id="inputEstado" maxlength="2" class="form-control " readonly>
+            </div>
           </div>
           <div class="form-group col-md-2">
             <label for="inputAddress2">Número</label>
@@ -133,47 +152,8 @@
             />
           </div>
         </div>
-        <div class="form-row">
-          <div class="form-group col-md-5">
-            <label for="inputCity">Cidade</label>
-            <input type="text" class="form-control" id="inputCity" readonly/>
-          </div>
-          <div class="form-group col-md-4">
-            <label for="inputEstado">Estado</label>
-            <select id="inputEstado" class="form-control">
-              <option selected>Escolher...</option>
-              <option>AC</option>
-              <option>AL</option>
-              <option>AP</option>
-              <option>AM</option>
-              <option>BA</option>
-              <option>CE</option>
-              <option>DF</option>
-              <option>ES</option>
-              <option>GO</option>
-              <option>MA</option>
-              <option>MT</option>
-              <option>MS</option>
-              <option>MG</option>
-              <option>PA</option>
-              <option>PB</option>
-              <option>PR</option>
-              <option>PE</option>
-              <option>PI</option>
-              <option>RJ</option>
-              <option>RN</option>
-              <option>RS</option>
-              <option>RO</option>
-              <option>RR</option>
-              <option>SC</option>
-              <option>SP</option>
-              <option>SE</option>
-              <option>TO</option>
-            </select>
-          </div>
-        </div>
 
-        <button type="submit" class="btn btn-primary">Criar conta</button>
+        <button type="submit" class="btn btn-primary" id="btnCriar">Criar conta</button>
 
         <p>eu já tenho uma conta, <a href="#">entrar</a></p>
       </form>
@@ -183,5 +163,8 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/controller/registro-controller.js"></script>
+    <script src="../js/model/registro-model.js"></script>
+    <script src="../js/view/registro-view.js"></script>
   </body>
 </html>

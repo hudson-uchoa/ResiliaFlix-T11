@@ -67,6 +67,10 @@ form {
   border-radius: 1%;
 }
 
+#concluido {
+  display: none;
+}
+
 #criar {
   color: #ffd000;
 }
