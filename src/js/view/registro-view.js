@@ -6,11 +6,16 @@ function render(apiResponse) {
 }
 
 function erro(error) {
-  $("#titulo-field").html(`${error}`);
+  $(".alert").css('display', 'flex')
+  $(".alert").text(`${error}`);
 }
 
-function registroConcluido(){
+function cadastroConcluido(){
     $("#concluido").css('display', 'block')
     $('.form-group').css('display', 'none')
+    $(".alert").css('display', 'none')
+    $('#criar').css('display', 'none')
+    $('#log').css('display', 'none')
+    $('form').css('text-align', 'center')
     $("#btnCriar").css('display', "none")
 }

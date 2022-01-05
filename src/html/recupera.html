@@ -9,7 +9,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="../css/recupera.css" />
     <title>ResiliaFlix</title>
   </head>
   <body>
@@ -69,9 +69,8 @@
     </header>
     <main>
       <form>
-        <div id="img-prc">
-          <img src="../img/teste.png" />
-        </div>
+        <h1>Recupeação de Login</h1>
+        <p id="parag">Insira teu e-mail e te enviaremos um e-mail para recuperar sua senha.</p>
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">E-mail</label>
           <input
@@ -81,27 +80,8 @@
             aria-describedby="emailHelp"
           />
         </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Senha</label>
-          <input
-            type="password"
-            class="form-control"
-            id="exampleInputPassword1"
-          />
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-          <label class="form-check-label" for="exampleCheck1"
-            >Lembrar login</label
-          >
-        </div>
         <div id="log">
-          <button type="button" class="btn btn-primary">Entrar</button>
-
-          <p class="log"><a href="../html/recupera.html">Esqueci minha senha </a></p>
-          <p class="log">
-            <a href="../html/registro.html">Não tenho conta, criar agora.</a>
-          </p>
+          <button type="button" class="btn btn-primary">Enviar</button>
         </div>
       </form>
     </main>
@@ -110,8 +90,7 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../js/main.js"></script>
-    <script src="../js/controller/login-controller.js"></script>
-    <script src="../js/model/login-model.js"></script>
-    <script src="../js/view/login-view.js"></script>
+    <script src="../js/controller/recupera-controller.js"></script>
+    <script src="../js/view/recupera-view.js"></script>
   </body>
 </html>
