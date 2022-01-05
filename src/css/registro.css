@@ -71,6 +71,10 @@ form {
   display: none;
 }
 
+strong {
+  color: #ffd000;
+}
+
 #criar {
   color: #ffd000;
 }
@@ -89,6 +93,13 @@ button {
   color: #ffd000;
 }
 
+.alert{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1%;
+}
+
 footer {
   margin-top: 2%;
   display: flex;
@@ -100,4 +111,11 @@ footer {
   color: white;
   text-align: center;
   background-color: #1c1c1c;
+}
+
+@media (max-width: 800px){
+  form {
+    width: fit-content;
+    height: fit-content;
+  }
 }

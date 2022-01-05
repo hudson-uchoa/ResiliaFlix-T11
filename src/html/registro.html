@@ -69,12 +69,12 @@
     </header>
 
     <main>
-      <form>
-        <div id="concluido">
-          <h3>Parabéns, seu cadastro foi concluido e agora você vai poder <br>
+      <form id="formulario">
+        <fieldset id="concluido">
+          <h3>Parabéns, seu cadastro foi concluido e agora você vai poder
             usufruir de todo tipo de sério ou filme já lançado no nosso catálogo da <strong>Resiliaflix</strong><br>
-          efetue o login e curta todos os nossos <a href="./login.html"><strong>benefícios! Clique aqui para entrar.</strong></a></h3>
-      </div>
+          efetue o login e curta todos os nossos <a href="./login.html"><br><strong>benefícios! Clique aqui para entrar.</strong></a></h3>
+          </fieldset>
         <h3 id="criar">Criar conta</h3>
         <div class="form-row">
           <div class="form-group col-md-7">
@@ -103,7 +103,7 @@
             <input
               type="password"
               class="form-control"
-              id="inputPassword4"
+              id="inputPassword3"
               placeholder="Digite sua senha"
               required
             />
@@ -153,9 +153,14 @@
           </div>
         </div>
 
-        <button type="submit" class="btn btn-primary" id="btnCriar">Criar conta</button>
+        <div class="alert alert-danger" role="alert">
+          
+        </div>
+      
 
-        <p>eu já tenho uma conta, <a href="#">entrar</a></p>
+        <button type="button" class="btn btn-primary" id="btnCriar">Criar conta</button>
+
+        <p id="log">eu já tenho uma conta, <a href="./login.html">entrar</a></p>
       </form>
     </main>
     <footer>
