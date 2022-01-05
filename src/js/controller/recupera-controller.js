@@ -1,14 +1,15 @@
 let email = document.getElementById('exampleInputEmail1')
 
+
 $(".btn").click(function(){
     try{
-        if(email.indexOf('@') > 0){
-            return location ('../../index.html')
+        if(email.value.indexOf('@') > 0){
+            recuperaConcluido()
         } else {
             throw new Error ('E-mail não encontrado.')
         }
     } catch(error){
-        error(error)
+        erro(error)
     }
     
   });
