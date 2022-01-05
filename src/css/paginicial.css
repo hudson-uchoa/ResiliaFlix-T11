@@ -46,6 +46,7 @@ body,html{
 #main{
     height: 70%;
     background-image: url(../img/netflixescuro.png);
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
